@@ -1,0 +1,39 @@
+/* Base Styles */
+body {
+    color: #363232;
+    background-color: #79c968;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+/* Button */
+.btn {
+    all: unset;
+    user-select: none;
+    background-color: white;
+    padding: 8px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* input */
+#input {
+    margin-bottom: 20px;
+    width: 150px;
+    padding: 5px 8px;
+    font-size: 18px;
+    color: #363232;
+}
+
+.copyBtn{
+    padding: 5px 8px;
+    font-size: 18px;
+    color: #363232;
+}
