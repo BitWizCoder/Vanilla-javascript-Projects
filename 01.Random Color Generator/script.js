@@ -38,5 +38,5 @@ function myFunction() {
   navigator.clipboard.writeText(input.value);
 
   // Alert the copied text
-  alert("Copied the text: " + input.value);
+  alert("Copied the color: " + input.value);
 }
