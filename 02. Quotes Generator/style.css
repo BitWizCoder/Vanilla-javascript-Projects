@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Base Styles */
+body {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+}
+
+
+/* Container */
+/* Top bar */
+.top-bar {
+    height: 40px;
+    width: 700px;
+    background-color: #374151;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 175px;
+}
+
+.title {
+    font-size: 16px;
+    color: #D4D4D4;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+    height: 100%;
+    justify-content: end;
+    align-items: center;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+    background-color: crimson;
+    border-radius: 999px;
+}
+
+.icon-minimize {
+    background-color: #4ADE80;
+}
+.icon-maximize {
+    background-color: #FDE047;
+}
+.icon-close {
+    background-color: #EF4444;
+}
+
+
+/* Quote Body */
+.quote-body {
+    height: 380px;
+    width: 700px;
+    background-color: #111827;
+    border-radius: 0 0 8px 8px;
+}
+
+.quote {
+    color: #d3cfcf;
+    font-size: 22px;
+    padding: 0 30px;
+    margin-top: 0;
+}
+
+.author {
+    color: #4ADE80;
+}
+
+/* terminal-code */
+.terminal-code {
+    text-align: left;
+    margin-top: 0;
+    padding: 8px;
+}
+
+/* Button */
+.btn {
+    margin-top: 30px;
+}
