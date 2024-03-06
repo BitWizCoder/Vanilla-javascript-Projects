@@ -16,5 +16,3 @@ generateQuote();
 // generate quote on btn click
 btn.addEventListener("click", generateQuote);
 
-// console.log(quotes[x]);
-// console.log(x);
