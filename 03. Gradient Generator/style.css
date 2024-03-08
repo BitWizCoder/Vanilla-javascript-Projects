@@ -49,6 +49,12 @@ p {
   margin: 15px 10px;
 }
 
+.btn-generate {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 /* Footer Attribute */
 .attribute {
   text-align: center;
