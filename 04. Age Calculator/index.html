@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Age Calculator</h1>
+
+      <p>Please select your birth date.</p>
+      <input
+        type="date"
+        id="date"
+        onchange="if (!this.value.startsWith('0')) dateLog();"
+      />
+      <h3>You are <span class="age">00</span> year old.</h3>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
