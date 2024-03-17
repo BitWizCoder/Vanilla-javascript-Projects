@@ -15,4 +15,9 @@ body {
 ul li {
   list-style: none;
   text-align: left;
+
+  display: flex;
+  gap: 50px;
+
+  /* border: 1px solid mediumvioletred; */
 }

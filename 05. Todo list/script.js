@@ -10,30 +10,44 @@ const taskLi = document.querySelector(".task-li");
 // Delete Tasks
 // Add Edit Button
 
-// https://gomakethings.com/updating-your-ui-based-on-user-inputs-with-vanilla-javascript/
-
 // Store todos in local storage
-const taskArray = [];
+const taskData = JSON.parse(localStorage.getItem("tasks"));
+
+const taskArray = taskData ? [...taskData] : [];
 
 addBtn.addEventListener("click", () => {
   if (taskInput.value.length < 1) return;
 
   taskArray.push(taskInput.value);
 
-  taskUl.innerHTML += "<li>" + taskInput.value + "</li>";
+  console.log(taskArray);
 
   localStorage.setItem("tasks", JSON.stringify(taskArray));
 
   taskInput.value = "";
+
+  
+  renderTasks();
 });
 
 // Get todos from local storage
-const taskData = JSON.parse(localStorage.getItem("tasks"));
-taskData.map((item) => {
-  const li = document.createElement("li");
-  li.appendChild(document.createTextNode(item));
-  taskUl.appendChild(li);
-  console.log(item);
-});
+function renderTasks() {
+  taskUl.innerHTML = "";
+  taskArray.map((item) => {
+    const li = document.createElement("li");
+    li.appendChild(document.createTextNode(item));
 
-// Delete Tasks
+    const deleteBtn = document.createElement("a");
+    deleteBtn.appendChild(document.createTextNode("Delete"));
+
+    li.appendChild(deleteBtn);
+
+    taskUl.appendChild(li);
+
+    deleteBtn.addEventListener("click", () => {
+      console.log(item);
+    });
+  });
+}
+
+renderTasks();
