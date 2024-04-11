@@ -26,7 +26,6 @@ addBtn.addEventListener("click", () => {
 
   taskInput.value = "";
 
-  
   renderTasks();
 });
 
@@ -45,9 +44,18 @@ function renderTasks() {
     taskUl.appendChild(li);
 
     deleteBtn.addEventListener("click", () => {
-      console.log(item);
+      deleteTask(item);
     });
   });
+}
+
+// Delete Task
+function deleteTask(task) {
+  const filteredItems = taskArray.filter(function (item) {
+    return item !== task;
+  });
+
+  console.log(filteredItems);
 }
 
 renderTasks();
